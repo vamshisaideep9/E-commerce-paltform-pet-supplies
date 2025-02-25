@@ -73,7 +73,9 @@ ROOT_URLCONF = "core.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [],
+        "DIRS": [
+            BASE_DIR / "templates"
+        ],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
@@ -98,7 +100,7 @@ DATABASES = {
         "NAME": os.getenv("DB_NAME", "Ecommerce"),
         "USER": os.getenv("DB_USER", "postgres"),
         "PASSWORD": os.getenv("DB_PASSWORD", "Vamshi%40123"),
-        "HOST": os.getenv("DB_HOST", "localhost"),
+        "HOST": os.getenv("DB_HOST", "db"),
         "PORT": os.getenv("DB_PORT", "5432")
 
     }
