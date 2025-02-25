@@ -1,0 +1,46 @@
+E-commerce platform for pet supplies
+
+1. Django based backend for an e-commerce platform.
+2. Featuring RESTFUL Apis for production management, user authentication, and order tracking.
+3. Implementing a reward system to enhance customer engagement and retention.
+4. admin dashboard with django ORM for inventory management, sales analytics, and user activity monitoring.
+5. Deploying using docker
+6. Optimized performance with caching (REDIS)
+7. API rate-limiting for security
+
+
+
+
+STEP1: Django Backend Development
+STEP2: Dockerizing the Backend
+STEP3: Deploying on AWS EC2
+STEP4: CI/CD Automation (GITHUB Actions + AWS CodeDeploy)
+STEP5: Scaling with Kubernetes (AWS EKS)
+
+
+
+Products Models:
+
+1. Product:
+    - name
+    - description
+    - price
+    - stock
+    - seller
+    - created_at
+
+
+Orders Models:
+
+1. Order:
+    - buyer
+    - product
+    - quantity
+    - total_price
+    - status-----> 1. pending, 2. shipped, 3. delivered
+    - created_at
+
+
+
+
+
