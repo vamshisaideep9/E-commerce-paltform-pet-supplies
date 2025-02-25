@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: pet-supplies
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: pet-supplies
+  template:
+    metadata:
+      labels:
+        app: pet-supplies
+    spec:
+      containers:
+      - name: pet-supplies
+        image: vamshisaideep/pet-supplies:latest
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
+        ports:
+        - containerPort: 8000
+
